@@ -1,0 +1,98 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-color: #262626;
+}
+*::before,
+*,
+*::after {
+  box-sizing: border-box;
+}
+.Base {
+  position: relative;
+  width: calc(100vw - 5px);
+  height: calc(100vh - 5px);
+  top: calc(5px / 2);
+  left: calc(5px / 2);
+}
+.InnerBase {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.Navigation {
+  width: 150px;
+  height: 100%;
+  background-color: #323232;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.Body {
+  flex-grow: 1;
+  position: relative;
+  overflow-y: scroll;
+}
+.Footer {
+  width: 10px;
+  background-color: #3c3c3c;
+}
+.NavMove {
+  display: block;
+  width: 100%;
+  background-color: #505050;
+  color: #fff;
+  word-wrap: break-word;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.NavMove:hover {
+  background-color: #646464;
+}
+.NavIcon {
+  width: 30px;
+  height: auto;
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.NavsBase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Navs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+.Logins {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Slash {
+  width: 90%;
+  position: relative;
+  left: 5%;
+  height: 10px;
+  background-color: #0078ff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.Navigation:hover .Slash {
+  background-color: #0096ff;
+}
