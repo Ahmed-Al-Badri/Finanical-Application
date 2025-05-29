@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
-import Login from "./Logins/Login";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { Login_ } from "./Logins/Login";
 import { logout } from "./FirebaseLogins";
@@ -16,7 +15,6 @@ const Home = () => {
     console.log("User ID:", user.uid);
     console.log("Email:", user.email);
     console.log("Display Name:", user.displayName);
-    // ... other user properties
   } else {
     console.log("No user is logged in.");
   }
