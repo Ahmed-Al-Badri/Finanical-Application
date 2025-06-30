@@ -1,0 +1,55 @@
+.User_ {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(225, 225, 225);
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.Bases {
+  padding: 10px;
+  border-right: 1px rgb(90, 90, 90) solid;
+}
+
+.Details {
+  flex-grow: 1;
+}
+
+.User_ > * {
+  .Bases;
+}
+
+.Goal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Goaltitle {
+  height: min-content;
+}
+
+.Effects > * {
+  padding: 2px;
+  margin: auto;
+  text-align: center;
+  border: 1px black solid;
+  margin: 1px;
+  border-radius: 5px;
+}
+
+.Effects > *:hover {
+  background-color: rgb(137, 137, 137);
+  color: rgb(201, 201, 201);
+  cursor: pointer;
+}
+
+.Details {
+  display: flex;
+  flex-direction: column;
+}
+.Details > * {
+  flex-grow: 1;
+  height: min-content;
+}

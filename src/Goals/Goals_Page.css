@@ -1,0 +1,238 @@
+.GoalsPage {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.Title_ {
+  font-size: 2em;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  color: #333;
+}
+.Dataset {
+  margin-bottom: 5px;
+  color: #555;
+  display: flex;
+  flex-direction: row;
+}
+.DataBox {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.DataBox i {
+  margin-bottom: 8px;
+  color: #555;
+}
+.Title {
+  font-size: 1em;
+  margin-bottom: 4px;
+}
+.Value {
+  font-size: 1em;
+  color: #333;
+}
+.BodyCenter {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+}
+.BodyRight {
+  width: 400px;
+}
+.Bodyset {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex-grow: 1;
+  overflow-y: scroll;
+  padding: 10px;
+  scrollbar-width: none;
+}
+.GoalView:hover > .GoalOptions {
+  display: flex;
+}
+.GoalOptions {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  display: none;
+}
+.GoalOptions > div {
+  padding: 5px;
+  background-color: #33333375;
+  border-radius: 5px;
+  margin: 5px;
+  color: white;
+}
+.GoalOptions > div:hover {
+  background-color: #333;
+}
+.GoalView {
+  position: relative;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  text-align: center;
+}
+.GoalView:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.GoalTime {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.GoalBody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.GoalInformation {
+  display: flex;
+  flex-grow: 1;
+  padding-left: 5px;
+  padding-right: 5px;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+.GoalTitle {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 10px;
+  margin-bottom: 4px;
+}
+.GoalSmallDescription {
+  font-size: 0.95em;
+  color: #666;
+  text-align: left;
+  padding: 0 10px;
+}
+.GoalDate {
+  width: 60px;
+  font-size: 0.9em;
+  color: #999;
+}
+.GoalDescription {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 1em;
+  line-height: 1.4;
+  color: #333;
+  margin-top: 10px;
+}
+.Options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.Options > div {
+  cursor: pointer;
+  margin: 2px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+.Options > div:hover {
+  background-color: #33333348;
+}
+.Options.Top {
+  border: 1px solid rgba(79, 76, 255, 0.675);
+  border-radius: 10px;
+}
+.Options.Top > div:hover {
+  background-color: #c3c3c3;
+}
+.Options.Top .Active {
+  background-color: #333;
+  color: white;
+}
+.AddBlock {
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.GetData {
+  font-family: "Poppins";
+  width: 400px;
+  position: relative;
+  padding: 5px;
+}
+.GetData input {
+  width: 100%;
+  padding: 5px;
+  padding-right: 40px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 1.1rem;
+  outline: none;
+}
+.GetData:has(input) span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0px;
+  padding: 10px;
+  pointer-events: none;
+  transition: all 0.1s ease;
+}
+.GetData button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+  padding: 5px;
+  border: none;
+  background-color: none;
+  font-size: 1.1rem;
+  border-radius: 10px;
+}
+.GetData input:focus ~ span,
+.GetData input:valid ~ span {
+  transform: translateX(350px) translateY(-50%);
+  font-size: 1.1rem;
+}
+.GetData textarea {
+  font-size: 1rem;
+  padding: 5px;
+  padding-bottom: 1.2rem;
+  min-height: calc(1rem + 1rem);
+  max-height: 10rem;
+  width: 100%;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.GetData:has(textarea) span {
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  transition: all 0.1s ease;
+  transform: translate(0, 0);
+}
+.GetData textarea:focus ~ span,
+.GetData textarea:valid ~ span {
+  transform: translateY(300%);
+  font-size: 0.7rem;
+}

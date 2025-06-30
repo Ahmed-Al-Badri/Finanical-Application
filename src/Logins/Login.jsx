@@ -105,7 +105,7 @@ class Login_Base extends Component {
     this.setState({ password: e.target.value });
   };
 
-  login_with_email(prob) {
+  login_with_email = (prob) => {
     if (prob.key == "Enter") {
       console.log("AA");
       console.log(this.state.email);
@@ -113,7 +113,7 @@ class Login_Base extends Component {
         this.props.navigate("/Home");
       });
     }
-  }
+  };
 
   render() {
     return (

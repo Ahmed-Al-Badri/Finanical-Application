@@ -1,0 +1,89 @@
+.Rows {
+  border: 1px solid black;
+  margin: 2px;
+  padding: 1px;
+  border-radius: 2px;
+}
+
+.Row {
+  padding: 15px;
+  position: relative;
+  font-family: sans-serif;
+  font-size: large;
+  word-wrap: break-word;
+}
+
+.Row_Entry {
+  .Row;
+  font-size: medium;
+  color: rgb(74, 74, 74);
+}
+
+.Entry {
+  .Row;
+  border-bottom: 1px black solid;
+}
+
+.Data_Row {
+  border-bottom: 1px rgb(112, 112, 112) solid;
+  position: relative;
+}
+
+.Points {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.Point_Block {
+  padding: 5px;
+  display: inline-block;
+  color: white;
+  background-color: black;
+  margin: 5px;
+  z-index: 2;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.Data_Row:not(:hover) .Points {
+  display: none;
+}
+
+.Data_Row:hover {
+  background-color: rgb(231, 231, 231);
+}
+
+.AddOption {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: larger;
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+//
+
+.GoalsSet {
+  //  overflow: scroll;
+}
+
+.Title {
+  font-family: sans-serif;
+  font-size: x-large;
+}
+
+.AddMenu {
+  display: flex;
+  flex-direction: row;
+}
+
+.AddMenu * {
+  padding-left: 2px;
+}

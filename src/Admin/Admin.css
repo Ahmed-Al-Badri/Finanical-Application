@@ -1,0 +1,48 @@
+.User_ {
+  display: flex;
+  flex-direction: row;
+  background-color: #e1e1e1;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.Bases {
+  padding: 10px;
+  border-right: 1px #5a5a5a solid;
+}
+.Details {
+  flex-grow: 1;
+}
+.User_ > * {
+  padding: 10px;
+  border-right: 1px #5a5a5a solid;
+}
+.Goal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.Goaltitle {
+  height: min-content;
+}
+.Effects > * {
+  padding: 2px;
+  margin: auto;
+  text-align: center;
+  border: 1px black solid;
+  margin: 1px;
+  border-radius: 5px;
+}
+.Effects > *:hover {
+  background-color: #898989;
+  color: #c9c9c9;
+  cursor: pointer;
+}
+.Details {
+  display: flex;
+  flex-direction: column;
+}
+.Details > * {
+  flex-grow: 1;
+  height: min-content;
+}
