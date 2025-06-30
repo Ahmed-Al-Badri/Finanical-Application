@@ -162,6 +162,7 @@ function App() {
             <div className="Body">
               <div className="BodyInside">
                 <Routes>
+                  <Route index element={<Home />} />
                   <Route path="/Home" element={<Home />} />
 
                   <Route path="/Admin" element={<Admin />} />
